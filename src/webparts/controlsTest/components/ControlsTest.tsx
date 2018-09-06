@@ -18,6 +18,7 @@ import { Environment, EnvironmentType } from '@microsoft/sp-core-library';
 import { SecurityTrimmedControl, PermissionLevel } from '../../../SecurityTrimmedControl';
 import { SPPermission } from '@microsoft/sp-page-context';
 import { PeoplePicker } from '../../../PeoplePicker';
+import { DateTimePicker, DateTimePickerType } from '../../../dateTimePicker';
 
 /**
  * Component that can be used to test out the React controls from this project
@@ -227,6 +228,11 @@ export default class ControlsTest extends React.Component<IControlsTestProps, IC
                             includeHidden={false}
                             multiSelect={true}
                             onSelectionChanged={this.onListPickerChange} />
+              </div>
+
+              <div className="ms-font-m">Date Time Picker:
+                <DateTimePicker label="Date and Time" type={DateTimePickerType.DateAndTime} value={ new Date()} />
+                <DateTimePicker label="Date" type={DateTimePickerType.Date} value={ new Date()} />
               </div>
 
               <div className="ms-font-m">TaxonomyPicker tester:

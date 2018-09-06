@@ -1,0 +1,15 @@
+.dtPickerTable {
+    display: table;
+    width: 100%;
+}
+
+.dtPickerTr {
+    display: table-row;
+    button {
+        vertical-align: middle;
+    }
+}
+
+.dtPickerTd {
+    display: table-cell;
+}
