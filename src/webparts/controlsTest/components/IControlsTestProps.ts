@@ -1,6 +1,6 @@
-import { WebPartContext } from '@microsoft/sp-webpart-base';
-import { ImageSize } from '../../../FileTypeIcon';
-import { DisplayMode } from '@microsoft/sp-core-library';
+import { WebPartContext } from "@microsoft/sp-webpart-base";
+import { ImageSize } from "../../../FileTypeIcon";
+import { DisplayMode } from "@microsoft/sp-core-library";
 
 export interface IControlsTestProps {
   context: WebPartContext;
@@ -15,4 +15,6 @@ export interface IControlsTestState {
   items: any[];
   initialValues: any[];
   iFrameDialogOpened?: boolean;
+  selectedDate: Date;
+  selectedDateTime: Date;
 }
